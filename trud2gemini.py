@@ -2,11 +2,11 @@
 Here's an example Python code implementing an LSTM algorithm for time series analysis using Keras:
 
 Python
-
+'''
 import numpy as np
 from tensorflow import keras
 from tensorflow.keras.layers import LSTM, Dense
-'''
+
 
 def create_dataset(data, look_back=1):
 """
@@ -64,3 +64,12 @@ predictions = model.predict(X_test)
 
 # Print first few predictions
 print(predictions[:5])
+
+'''
+This code defines functions for creating datasets and the LSTM model. It then trains the model on the prepared data and makes predictions on the test set. You can further customize this code for your specific needs, such as:
+Specifying the number of LSTM units: This can be adjusted based on the complexity of your data.
+Adding more layers: You can add additional LSTM layers or other layers like dropout for regularization.
+Changing the loss function and optimizer: Explore different options based on your problem.
+Evaluating model performance: Implement metrics like mean squared error or mean absolute error to assess prediction accuracy.
+Remember, this is a basic example. For real-world applications, data preprocessing, hyperparameter tuning, and evaluation are crucial steps.
+'''
