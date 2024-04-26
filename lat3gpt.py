@@ -17,4 +17,5 @@ y_pred = model.predict(X_new)
 print("Predictions for new data:")
 for i in range(len(X_new)):
 print(f"X = {X_new[i][0]}, Predicted y = {y_pred[i]}")
-```
+
+#```
